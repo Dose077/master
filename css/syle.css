@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-image: url(../images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    min-width: 400px;   
+    min-height: 335px;
+    background-color: #fff;
+    border-radius: 20px;    
+    overflow: hidden;
+}
+.card__title{
+    padding: 14px;
+    text-align: center;
+    font-size: 28px;
+}
+.label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #000;
+}
+.text{
+    color: grey;
+}
+.hidden{
+    visibility: hidden;
+}
+.label__check{
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.label__input:checked ~ .label__check{
+background-image: url(../images/img/check.svg);
+background-repeat: no-repeat;
+background-size: contain;
+}
+.btn{
+    cursor: pointer;
+    background: dodgerblue;
+    width: 100%;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+.btn::after{
+    content: url(../images/img/arrow.svg);
+    position: absolute;
+    bottom: 13px;
+    right: 110px;
+
+}
+.btn:active{
+    margin-top: 3px;
+}
